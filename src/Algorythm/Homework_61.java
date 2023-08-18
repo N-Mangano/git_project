@@ -12,10 +12,10 @@ public class Homework_61 {
     while (scanner.hasNextInt()) {
       numbers.add(scanner.nextInt());
     }
-    int min = numbers.get(0);
+    int min = -1;
     for (int x : numbers) {
       if (x % 2 == 0) {
-        if (x < min) {
+        if (x == -1 || x < min) {
           min = x;
         }
       }
